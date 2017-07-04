@@ -1,116 +1,123 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0">
 
--<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0">
+	<modelVersion>4.0.0</modelVersion>
 
-<modelVersion>4.0.0</modelVersion>
+	<groupId>com.sqa.sb</groupId>
 
-<groupId>com.sqa.jf</groupId>
+	<artifactId>abstract-project</artifactId>
 
-<artifactId>abstract-project</artifactId>
+	<version>1.0</version>
+<dependencies>
 
-<version>1.0</version>
+	<dependency>
 
+			<groupId>org.testng</groupId>
 
--<dependencies>
+			<artifactId>testng</artifactId>
 
+			<version>6.10</version>
 
--<dependency>
+			<scope>test</scope>
 
-<groupId>org.testng</groupId>
-
-<artifactId>testng</artifactId>
-
-<version>6.10</version>
-
-<scope>test</scope>
-
-</dependency>
+		</dependency>
 
 
--<dependency>
 
-<groupId>org.seleniumhq.selenium</groupId>
+		<dependency>
 
-<artifactId>selenium-java</artifactId>
+			<groupId>org.seleniumhq.selenium</groupId>
 
-<version>2.53.1</version>
+			<artifactId>selenium-java</artifactId>
 
-</dependency>
+			<version>2.53.1</version>
 
-
--<dependency>
-
-<groupId>log4j</groupId>
-
-<artifactId>log4j</artifactId>
-
-<version>1.2.17</version>
-
-</dependency>
+		</dependency>
 
 
--<dependency>
 
-<groupId>org.apache.poi</groupId>
+		<dependency>
 
-<artifactId>poi</artifactId>
+			<groupId>log4j</groupId>
 
-<version>3.15</version>
+			<artifactId>log4j</artifactId>
 
-</dependency>
+			<version>1.2.17</version>
 
-
--<dependency>
-
-<groupId>org.apache.poi</groupId>
-
-<artifactId>poi-ooxml</artifactId>
-
-<version>3.15</version>
-
-</dependency>
+		</dependency>
 
 
--<dependency>
 
-<groupId>mysql</groupId>
+		<dependency>
 
-<artifactId>mysql-connector-java</artifactId>
+			<groupId>org.apache.poi</groupId>
 
-<version>5.1.39</version>
+			<artifactId>poi</artifactId>
 
-</dependency>
+			<version>3.15</version>
 
-</dependencies>
-
-
--<build>
+		</dependency>
 
 
--<plugins>
+
+		<dependency>
+
+			<groupId>org.apache.poi</groupId>
+
+			<artifactId>poi-ooxml</artifactId>
+
+			<version>3.15</version>
+
+		</dependency>
 
 
--<plugin>
 
-<groupId>org.apache.maven.plugins</groupId>
+		<dependency>
 
-<artifactId>maven-compiler-plugin</artifactId>
+			<groupId>mysql</groupId>
 
-<version>3.3</version>
+			<artifactId>mysql-connector-java</artifactId>
+
+			<version>5.1.39</version>
+
+		</dependency>
+
+	</dependencies>
 
 
--<configuration>
 
-<source>1.8</source>
+	<build>
 
-<target>1.8</target>
 
-</configuration>
 
-</plugin>
+		<plugins>
 
-</plugins>
 
-</build>
+
+			<plugin>
+
+				<groupId>org.apache.maven.plugins</groupId>
+
+				<artifactId>maven-compiler-plugin</artifactId>
+
+				<version>3.3</version>
+
+
+
+				<configuration>
+
+					<source>1.8</source>
+
+					<target>1.8</target>
+
+				</configuration>
+
+			</plugin>
+
+		</plugins>
+
+	</build>
 
 </project>
